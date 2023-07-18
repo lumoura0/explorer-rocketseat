@@ -1,0 +1,122 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 1.6rem;
+
+  font-family: 'Epilogue', sans-serif;
+  -webkit-font-smoothing: antialiased; /* deixa o contorno da fonte mais suave */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ece9fd;
+}
+
+h1,
+a,
+section {
+  color: #090039;
+}
+
+main {
+  width: min(95%, 1021px);
+  margin: 0 auto;
+  padding-top: clamp(6rem, 5.0870rem + 2.8531vw, 8rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+
+article > span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #7158ef;
+}
+
+h1 {
+  font-size: 4rem;
+  max-width: 20ch;
+  font-weight: 800;
+
+  margin: 2rem 0 3rem;
+}
+
+p {
+  color: rgba(10, 0, 57, 0.64);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+
+  max-width: 52ch;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+ol > li {
+  color: #090039;
+  font-size: clamp(1.6rem, 1.2348rem + 1.1412vw, 2.4rem);
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: clamp(0rem, -2.2825rem + 7.1327vw, 5rem);
+
+
+}
+
+ol > li > span {
+  font-size: clamp(4.2rem, 2.8305rem + 4.2796vw, 7.2rem);
+  width: 4.7rem;
+}
+
+
+@media (min-width: 640px) {
+  main {
+    flex-direction: row;
+  }
+}

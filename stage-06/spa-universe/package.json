@@ -1,0 +1,14 @@
+{
+  "name": "spa-universe",
+  "version": "1.0.0",
+  "description": "SPA com JS Vanilha",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Eduardo Nóbrega",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

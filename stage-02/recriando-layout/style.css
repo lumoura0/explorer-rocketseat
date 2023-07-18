@@ -1,0 +1,120 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 1.6rem;
+
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased; /* deixa o contorno da fonte mais suave */
+}
+
+body {
+  min-height: 100vh;
+
+  background: url('assets/waves.svg') no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+
+h1,
+strong,
+a {
+  color: #3f3d56;
+}
+
+span {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 1.8rem + 2.1875vw, 3.2rem);
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+
+  margin: 3rem 0 1.5rem;
+}
+
+h1 > span {
+  color: #ee24ff;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+main,
+footer {
+  width: min(95%, 62.6rem);
+  margin: 0 auto;
+}
+
+main > img {
+  margin: 6rem auto 0;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main > section > p {
+  color: #828282;
+  font-weight: 400;
+  font-size: clamp(1.3rem, 1.1rem + 0.625vw, 1.5rem);
+  line-height: 2.2rem;
+
+  max-width: 63ch;
+
+  margin: 0 auto;
+}
+
+.line {
+  max-width: 39rem;
+  height: 1px;
+  margin: 6rem auto 1.6rem;
+
+  background-color: #ECEFF2;
+}
+
+footer {
+  padding-bottom: 15vw;
+}
+
+footer > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 0.0000rem + 6.2500vw, 4rem);
+}
+
+footer > nav > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
